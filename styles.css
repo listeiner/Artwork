@@ -273,7 +273,8 @@ h3 {
 .navbar-menu a {
   color: #fff;
   text-decoration: none;
-  margin-left: 10px;
+  margin-left: 1vw;
+  font-size: 1.5vw;
 }
 
 @media (max-width: 768px) {

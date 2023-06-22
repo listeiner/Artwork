@@ -1,5 +1,4 @@
 
-
 .navbar {
     position: sticky;
     position: -webkit-sticky;
@@ -232,5 +231,76 @@ h3 {
   .bio-container {
     flex-direction: column;
     height: auto;
+  }
+}
+
+/* Nav Changes */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar-logo {
+  font-size: 20px;
+}
+
+.navbar-logo img {
+  width: 3vw;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+.navbar-menu {
+  display: flex;
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    padding: 10px;
+  }
+
+  .navbar-menu a {
+    margin: 5px 0;
+  }
+
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
   }
 }

@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Cinzel+Decorative"
     />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Artwork</title>
   </head>
 
@@ -27,22 +28,33 @@
     <h1>Artwork</h1>
     <p class="tagline">A collection of my drawings</p>
     <nav class="navbar">
-      <ul>
-        <li><a href="https://nomshollow.listeiner.com">Nom's Hollow</a></li>
-        <li><a href="https://artwork.listeiner.com">Artwork</a></li>
-        <li class="dropdown">
-          <a href="https://projects.listeiner.com" class="dropbtn">Projects</a>
-          <div class="dropdown-content">
-            <a href="https://whack-a-monokuma.listeiner.com"
-              >Whack-A-Monokuma</a
-            >
-            <a href="https://gw2tptracker.listeiner.com">GW2 TP Tracker</a>
-          </div>
-        </li>
-        <li style="float: right">
-          <a class="active" href="https://listeiner.com">About</a>
-        </li>
-      </ul>
+      <div class="nav">
+        <div class="navbar-logo">
+          <!-- <img src="GumiLogoBig.png" alt="Logo" /> -->
+        </div>
+        <div class="navbar-toggle" onclick="toggleNavbar()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      <div class="navbar-menu">
+        <ul>
+          <li><a href="https://nomshollow.listeiner.com">Nom's Hollow</a></li>
+          <li><a href="https://artwork.listeiner.com">Artwork</a></li>
+          <li class="dropdown">
+            <a href="https://projects.listeiner.com" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+              <a href="https://whack-a-monokuma.listeiner.com"
+                >Whack-A-Monokuma</a
+              >
+              <a href="https://gw2tptracker.listeiner.com">GW2 TP Tracker</a>
+            </div>
+          </li>
+          <li style="float: right">
+            <a class="active" href="https://listeiner.com">About</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="main">
@@ -51,6 +63,6 @@
     </div>
 
     <script src="profiles.js"></script>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
